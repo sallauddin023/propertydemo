@@ -12,9 +12,10 @@ import com.guru.property.bean.GmsDataSource;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:gms.properties"})
+
 @PropertySources({
-	@PropertySource("classpaht:datasource.properties"),
-	@PropertySource("clsspath:gms.properties")
+	@PropertySource("classpath:datasource.properties"),
+	@PropertySource("classpath:gms.properties")
 	
 })
 public class PropertyConfig {

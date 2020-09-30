@@ -13,11 +13,11 @@ import com.guru.property.bean.GmsDataSource;
 @Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:gms.properties"})
 
-@PropertySources({
-	@PropertySource("classpath:datasource.properties"),
-	@PropertySource("classpath:gms.properties")
-	
-})
+//@PropertySources({
+//	@PropertySource("classpath:datasource.properties"),
+//	@PropertySource("classpath:gms.properties")
+//	
+//})
 public class PropertyConfig {
 	
 	@Value("${guru.username}")
@@ -57,10 +57,10 @@ public class PropertyConfig {
 		dataSource.setPassword(url);
 		return dataSource;
 	}
-	@Bean 
-	public PropertySourcesPlaceholderConfigurer properties() {
-		PropertySourcesPlaceholderConfigurer properties = new PropertySourcesPlaceholderConfigurer();
-		return properties;
-	}
+//	@Bean 
+//	public PropertySourcesPlaceholderConfigurer properties() {
+//		PropertySourcesPlaceholderConfigurer properties = new PropertySourcesPlaceholderConfigurer();
+//		return properties;
+//	}
 
 }
